@@ -4,12 +4,7 @@
 #### FSUID - ljm19a
 #
 
-## Development Protocols (Mac OS)
-
-Some step
-```
-some code
-```
+## Status -> Section 2, Video 7
 
 ## Tips for updating this repo
 
