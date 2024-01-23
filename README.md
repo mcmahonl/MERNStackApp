@@ -1,4 +1,7 @@
+# MERN Stack Application
+#
 # CEN4021 Assignment 1
+#
 ### Name 
 #### Lance McMahon
 ### FSUID
