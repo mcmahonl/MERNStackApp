@@ -1,6 +1,8 @@
 # CEN4021 Assignment 1
-Name: Lance McMahon
-FSUID: ljm19a
+### Name 
+#### Lance McMahon
+### FSUID
+#### ljm19a
 
 ## Development Protocols (Mac OS)
 
