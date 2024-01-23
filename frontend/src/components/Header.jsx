@@ -1,12 +1,16 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <Navbar.Brand href="/">MERN Stack Store App</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img src={logo} alt="logo" width="30" height="30" className="d-inline-block align-top" />{' '}
+            Ecommerce Store
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
