@@ -4,7 +4,7 @@
 #### FSUID - ljm19a
 #
 
-## Status -> Section 2, Video 7
+### Section 2, Video 6 ✅
 
 ## Tips for updating this repo
 
