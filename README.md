@@ -4,7 +4,13 @@
 #### FSUID - ljm19a
 #
 
-### Section 2, Video 6 ✅
+## Progress
+
+Section 1 ✅
+Section 2: ❌ (video 7)
+Section 3: ❌
+Section 4: ❌
+Section 5: ❌
 
 ## Tips for updating this repo
 
