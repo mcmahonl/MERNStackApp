@@ -1,13 +1,16 @@
-# CEN4021 Assignment 1
-Name: Lance McMahon
-FSUID: ljm19a
+# CEN4021 Assignment 1 - MERN Stack Application
+#
+### Name - Lance McMahon
+### FSUID - ljm19a
+#
 
-## Development Protocols (Mac OS)
+## Progress
 
-Some step
-```
-some code
-```
+##### Section 1 ✅
+##### Section 2 ✅
+##### Section 3 ✅
+##### Section 4 ✅
+##### Section 5 ❌
 
 ## Tips for updating this repo
 
