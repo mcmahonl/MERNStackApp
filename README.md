@@ -1,18 +1,12 @@
-# CEN4021 Assignment 1 - MERN Stack Application
+# MERN Stack eCommerce Application
+
+#### Name - Lance McMahon
+#### FSUID - ljm19a
 #
-### Name - Lance McMahon
-### FSUID - ljm19a
-#
 
-## Progress
+##### Sections 5/5 Completed
 
-##### Section 1 ✅
-##### Section 2 ✅
-##### Section 3 ✅
-##### Section 4 ✅
-##### Section 5 ✅
-
-## Tips for updating this repo
+## Contributing
 
 Creating your own branch from main:
 ```
