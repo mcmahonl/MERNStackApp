@@ -4,7 +4,7 @@
 #### FSUID - ljm19a
 #
 
-### Sections 6/14 Completed
+### Sections 7/14 Completed
 
 ## Contributing
 
