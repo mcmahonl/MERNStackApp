@@ -99,6 +99,7 @@ const ProfileScreen = () => {
           <Button type='submit' variant='primary'>
             Update
           </Button>
+          {loadingUpdateProfile && <Loader />}
         </Form>
       </Col>
       <Col md={9}>
@@ -124,7 +125,7 @@ const ProfileScreen = () => {
             <tbody>
               {orders.map((order) => (
                 <tr key={order._id}>
-                  <td>{order._id}</td>
+                  <tD>{order._id}</tD>
                   <td>{order.createdAt.substring(0, 10)}</td>
                   <td>{order.totalPrice}</td>
                   <td>
