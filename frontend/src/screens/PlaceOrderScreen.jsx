@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import CheckoutSteps from '../components/CheckoutSteps';
 import Loader from '../components/Loader';
-import { useCreateOrderMutation } from '../slices/orderApiSlice';
+import { useCreateOrderMutation } from '../slices/ordersApiSlice';
 import { clearCartItems } from '../slices/cartSlice';
 
 const PlaceOrderScreen = () => {
@@ -19,8 +19,7 @@ const PlaceOrderScreen = () => {
   useEffect(() => {
     if (!cart.shippingAddress.address) {
       navigate('/shipping');
-    } 
-    else if (!cart.paymentMethod) {
+    } else if (!cart.paymentMethod) {
       navigate('/payment');
     }
   }, [cart.paymentMethod, cart.shippingAddress.address, navigate]);
@@ -40,8 +39,7 @@ const PlaceOrderScreen = () => {
       }).unwrap();
       dispatch(clearCartItems());
       navigate(`/order/${res._id}`);
-    } 
-    catch (err) {
+    } catch (err) {
       toast.error(err);
     }
   };
@@ -55,7 +53,7 @@ const PlaceOrderScreen = () => {
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
-                <strong>Address: </strong>
+                <strong>Address:</strong>
                 {cart.shippingAddress.address}, {cart.shippingAddress.city}{' '}
                 {cart.shippingAddress.postalCode},{' '}
                 {cart.shippingAddress.country}
@@ -132,7 +130,9 @@ const PlaceOrderScreen = () => {
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                {error && <Message variant='danger'>{error}</Message>}
+                {error && (
+                  <Message variant='danger'>{error.data.message}</Message>
+                )}
               </ListGroup.Item>
               <ListGroup.Item>
                 <Button
