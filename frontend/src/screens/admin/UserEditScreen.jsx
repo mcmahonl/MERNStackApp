@@ -63,6 +63,8 @@ const UserEditScreen = () => {
           </Message>
         ) : (
           <Form onSubmit={submitHandler}>
+            {loadingUpdate && <Loader />}
+
             <Form.Group className='my-2' controlId='name'>
               <Form.Label>Name</Form.Label>
               <Form.Control
