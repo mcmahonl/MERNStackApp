@@ -19,7 +19,7 @@ const ProfileScreen = () => {
 
   const { userInfo } = useSelector((state) => state.auth);
 
-  const { data: orders, isLoading, error } = useGetMyOrdersQuery();
+  const { data: orders, isLoading, error } = useGetMyOrdersQuery({ _id: userInfo._id });
 
   const [updateProfile, { isLoading: loadingUpdateProfile }] =
     useProfileMutation();
