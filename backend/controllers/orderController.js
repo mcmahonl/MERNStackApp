@@ -6,6 +6,7 @@ import Order from '../models/orderModel.js';
 // @access  Private
 const addOrderItems = asyncHandler(async (req, res) => {
   const {
+    _user,
     orderItems,
     shippingAddress,
     paymentMethod,
@@ -25,7 +26,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
         product: x._id,
         _id: undefined,
       })),
-      user: req.user._id,
+      user: _user,
       shippingAddress,
       paymentMethod,
       itemsPrice,
@@ -44,7 +45,9 @@ const addOrderItems = asyncHandler(async (req, res) => {
 // @route   GET /api/orders/myorders
 // @access  Private
 const getMyOrders = asyncHandler(async (req, res) => {
-  const orders = await Order.find({ user: req.user._id });
+  const { _id } = req.params;
+
+  const orders = await Order.find({ user: _id });
   res.json(orders);
 });
 
